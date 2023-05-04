@@ -1,0 +1,23 @@
+{
+  "name": "calculator-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calculator.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErnestFistozz/calculator-javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErnestFistozz/calculator-javascript/issues"
+  },
+  "homepage": "https://github.com/ErnestFistozz/calculator-javascript#readme",
+  "dependencies": {
+    "jest": "^29.5.0"
+  }
+}
