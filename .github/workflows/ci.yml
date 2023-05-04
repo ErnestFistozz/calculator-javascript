@@ -21,6 +21,6 @@ jobs:
       #   run: mvn -B test
       #   id: buildTest
 
-      # - name: Upload coverage to Codecov
-      #   uses: codecov/codecov-action@v3
-      #   if: success() || failure()
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+        if: success() || failure()
