@@ -15,5 +15,13 @@ describe("Calculator tests", () => {
         // assert
         expect(result).toBe(3);
       });
+
+      test('multiplication of 2 by 3 to equal 6', () => {
+        // arrange and act
+        let inst = new cal.Calculator(3,2);
+        let result = inst.multiplication()
+        // assert
+        expect(result).toBe(6);
+      });
     
 })
