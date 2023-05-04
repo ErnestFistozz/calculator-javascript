@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [17.x, 18.x, 19.x, 20.x]
+        node-version: [18.x]
 
     steps:
       - uses: actions/checkout@v3
@@ -17,9 +17,11 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # - name: Build and Run Tests
-      #   run: mvn -B test
-      #   id: buildTest
+      - name: install packages
+        run: npm install
+
+      - name: execute tests
+        run: npm test
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
