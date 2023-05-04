@@ -1,0 +1,26 @@
+name: NodeJS
+on: [push]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [17.x, 18.x, 19.x, 20.x]
+
+    steps:
+      - uses: actions/checkout@v3
+        name: checkout code
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          java-version: ${{ matrix.node-version }}
+
+      # - name: Build and Run Tests
+      #   run: mvn -B test
+      #   id: buildTest
+
+      # - name: Upload coverage to Codecov
+      #   uses: codecov/codecov-action@v3
+      #   if: success() || failure()
