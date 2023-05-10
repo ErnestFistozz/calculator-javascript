@@ -46,4 +46,11 @@ describe("Calculator tests", () => {
         expect(inst.modulus).toThrow('Cannot modularise by zero')
       })
 
+      test("constructor throws an error", () => {
+        expect(() => {
+            new Calculator();
+          }).toThrow();
+      })
+
+
 })

@@ -1,6 +1,6 @@
 class Calculator {
     constructor(x, y) {
-      if(isNaN(x) || isNaN(y)){
+      if(isNaN(x) || isNaN(y) || x == null || y == null || x == undefined || y == undefined){
           throw new Error('Cannot initialise by Undefined values')
       }
       this.value1 = x;
