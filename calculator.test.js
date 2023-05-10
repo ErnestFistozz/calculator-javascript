@@ -58,6 +58,5 @@ describe("Calculator tests", () => {
             new Calculator();
           }).toThrow();
       })
-
-
+      
 })
