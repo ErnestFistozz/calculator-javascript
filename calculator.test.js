@@ -46,6 +46,13 @@ describe("Calculator tests", () => {
         expect(inst.modulus).toThrow('Cannot modularise by zero')
       })
 
+      test("Modulus of 9 by 3 to equal zero", () => {
+
+        let inst = new cal.Calculator(4,2)
+        let result = inst.modulus()
+        expect(result).toBe(0)
+      })
+
       test("constructor throws an error", () => {
         expect(() => {
             new Calculator();

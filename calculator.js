@@ -26,6 +26,7 @@ class Calculator {
       if (this.value2 == 0) {
         throw new Error("Cannot modularise by zero");
       }
+      return this.value1 % this.value2
     };
   }
   
