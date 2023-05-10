@@ -1,14 +1,14 @@
 class Circle {
-    constructor(r) {
-        this.radius = r;
-    }
-    circleArea = () => {
-        if (this.radius == 0)
+    // constructor(r) {
+    //     this.radius = r;
+    // }
+    circleArea = (radius) => {
+        if (radius == 0)
             return 0
-        if (this.radius == 1)
+        if (radius == 1)
             return Math.PI
 
-        return Math.pow(this.radius, 2)*Math.PI
+        return Math.pow(radius, 2)*Math.PI
     }
 }
 
