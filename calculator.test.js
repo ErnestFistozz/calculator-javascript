@@ -31,5 +31,11 @@ describe("Calculator tests", () => {
         // assert
         expect(result).toBe(3);
       });
-    
+
+      test("division by zero to throw error", () => {
+
+        let inst = new cal.Calculator(1,0)
+        expect(inst.division).toThrow(Error)
+        expect(inst.division).toThrow('Cannot divide by zero')
+      });
 })
