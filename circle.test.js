@@ -1,9 +1,9 @@
-const circ = require('./circle')
+const { circleArea } = require('./circle')
 
 describe("Circle Tests", () => {
     test('Circle Area', () => {
-        let inst = new circ.Circle();
+
         const r = 0
-        expect(inst.circleArea(r)).toBe(0);
+        expect(circleArea(r)).toBe(0);
       });
 })
