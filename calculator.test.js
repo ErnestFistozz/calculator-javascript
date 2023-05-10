@@ -38,4 +38,12 @@ describe("Calculator tests", () => {
         expect(inst.division).toThrow(Error)
         expect(inst.division).toThrow('Cannot divide by zero')
       });
+
+      test("modulus by zero to throw error", () => {
+
+        let inst = new cal.Calculator(1,0)
+        expect(inst.modulus).toThrow(Error)
+        expect(inst.modulus).toThrow('Cannot modularise by zero')
+      })
+
 })
