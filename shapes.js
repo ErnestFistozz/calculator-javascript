@@ -6,6 +6,9 @@ class Rectangle {
     area = () => {
         return this.length * this.width;
     }
+    perimeter = () => {
+        return 2 * (this.length + this.width);
+    }
 }
 
 
