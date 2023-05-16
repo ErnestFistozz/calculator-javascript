@@ -9,4 +9,8 @@ describe("Decide Vote Tests", () => {
         const result =  voteDecider(20)
         expect(result).toBe('you are eligible to vote for districts');
       });
+      test('Test municipal voter', () => {
+        const result =  voteDecider(23)
+        expect(result).toBe('you can vote at municipal level');
+      });
 })
