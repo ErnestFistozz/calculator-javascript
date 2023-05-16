@@ -13,4 +13,8 @@ describe("Decide Vote Tests", () => {
         const result =  voteDecider(23)
         expect(result).toBe('you can vote at municipal level');
       });
+      test('Test national voter', () => {
+        const result =  voteDecider(27)
+        expect(result).toBe('you can vote nationally');
+      });
 })
