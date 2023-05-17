@@ -2,4 +2,8 @@ const name = () => {
     return 'Ernest'
 }
 
-module.exports = name
+const surname = () => {
+    return 'Mamba'
+}
+
+module.exports = { name, surname }

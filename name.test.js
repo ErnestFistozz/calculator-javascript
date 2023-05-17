@@ -1,4 +1,4 @@
-const name = require('./name')
+const { name, surname } = require('./name')
 
 
 describe("Name Tests", () => {
