@@ -13,4 +13,8 @@ describe("Days Tests", () => {
         const result =  days(6)
         expect(result).toBe('Saturday');
       });
+       test('Tuesday Tests', () => {
+        const result =  days(2)
+        expect(result).toBe('Tuesday');
+      });
 })
