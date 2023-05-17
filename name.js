@@ -6,4 +6,7 @@ const surname = () => {
     return 'Mamba'
 }
 
-module.exports = { name, surname }
+const fullname = () => {
+    return 'Ernest Mamba'
+}
+module.exports = { name, surname, fullname}
